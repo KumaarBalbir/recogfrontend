@@ -38,7 +38,7 @@ export default (props) => {
   const [facePhotos, setFacePhotos] = useState([]);
   const [faceMatcher, setFaceMatcher] = useState(null);
 
-  const [setAbsentees] = useState([]);
+  // const [setAbsentees] = useState([]);
   const [course, setCourse] = useState({});
 
   const { data } = useQuery(

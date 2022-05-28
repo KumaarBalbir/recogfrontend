@@ -1,7 +1,7 @@
-export const drawRectAndLabelFace = (descriptions, faceDB, participants, ctx) => {
+export const AndLabelFace = (descriptions, faceDB, participants, ctx) => {
   // Loop through each desc
   descriptions &&
-    descriptions.map((desc) => {
+    descriptions.forEach((desc) => {
       // Extract boxes and classes
       const { x, y, width, height } = desc.detection.box;
       const landmarksPoint=desc.landmarks._positions;
