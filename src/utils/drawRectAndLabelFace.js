@@ -1,4 +1,4 @@
-export const AndLabelFace = (descriptions, faceDB, participants, ctx) => {
+export const drawRectAndLabelFace = (descriptions, faceDB, participants, ctx) => {
   // Loop through each desc
   descriptions &&
     descriptions.forEach((desc) => {
