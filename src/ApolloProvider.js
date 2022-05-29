@@ -7,10 +7,7 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import { setContext } from "apollo-link-context";
 
 const httpLink = createHttpLink({
-  uri:
-    !process.env.NODE_ENV || process.env.NODE_ENV === "development"
-      ? "http://localhost:4000/"
-      : "https://floating-anchorage-67010.herokuapp.com/",
+  uri:"https://floating-anchorage-67010.herokuapp.com/",
 });
 
 const authLink = setContext(() => {
